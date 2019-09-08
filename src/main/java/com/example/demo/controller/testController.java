@@ -22,7 +22,7 @@ public class testController {
     public String test(Model model)
     {
         String values = testDao.getConfig("yuliu1");
-        model.addAttribute("word", values);//123213656569
+        model.addAttribute("word", values);//1232136565698989
         String redis_test = RedisUtil.get(0,"test");
         System.out.println(redis_test);
         return "test";
