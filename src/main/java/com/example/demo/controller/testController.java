@@ -23,8 +23,8 @@ public class testController {
     {
         String values = testDao.getConfig("yuliu1");
         model.addAttribute("word", values);
-        /*String redis_test = RedisUtil.get(0,"test");
-        System.out.println(redis_test);*/
+        String redis_test = RedisUtil.get(0,"test");
+        System.out.println(redis_test);
         return "test";
     }
 }
